@@ -7,7 +7,7 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-webbot = "^0.34"
+webbot = {git = "https://github.com/YtGz/webbot"}
 
 [tool.poetry.dev-dependencies]
 

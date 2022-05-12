@@ -198,13 +198,20 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [[package]]
 name = "webbot"
 version = "0.34"
-description = "Web Browser automation and testing library for python with more features and simpler api than selenium"
+description = ""
 category = "main"
 optional = false
 python-versions = "*"
+develop = false
 
 [package.dependencies]
 selenium = "*"
+
+[package.source]
+type = "git"
+url = "https://github.com/YtGz/webbot"
+reference = "master"
+resolved_reference = "5199c7394530cd8fbb9a7dd52d59783390648c22"
 
 [[package]]
 name = "wsproto"
@@ -220,7 +227,7 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "3612b000d4369c62f818fa1e4711e88dd2390df0e3bd8ea5ab8229a8caaab825"
+content-hash = "d5c35abf2fa21a3074e8adcdd5d260648859edecc5f4a8ae117db3a60ad10133"
 
 [metadata.files]
 async-generator = [
@@ -359,10 +366,7 @@ urllib3 = [
     {file = "urllib3-1.26.9-py2.py3-none-any.whl", hash = "sha256:44ece4d53fb1706f667c9bd1c648f5469a2ec925fcf3a776667042d645472c14"},
     {file = "urllib3-1.26.9.tar.gz", hash = "sha256:aabaf16477806a5e1dd19aa41f8c2b7950dd3c746362d7e3223dbe6de6ac448e"},
 ]
-webbot = [
-    {file = "webbot-0.34-py3-none-any.whl", hash = "sha256:1c709d570a0fb125142b8d840fb73ed02f374e727bee400fcafe915a424475f0"},
-    {file = "webbot-0.34.tar.gz", hash = "sha256:2067bfe8eb0ab1a808072b378bc619d6f1ace1212b3ccbe2aa97d0dc2cf20ce5"},
-]
+webbot = []
 wsproto = [
     {file = "wsproto-1.1.0-py3-none-any.whl", hash = "sha256:2218cb57952d90b9fca325c0dcfb08c3bda93e8fd8070b0a17f048e2e47a521b"},
     {file = "wsproto-1.1.0.tar.gz", hash = "sha256:a2e56bfd5c7cd83c1369d83b5feccd6d37798b74872866e62616e0ecf111bda8"},
