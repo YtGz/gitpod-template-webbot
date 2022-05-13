@@ -17,3 +17,15 @@ Click the above "Open in Gitpod" button to start a new workspace. Once you're re
 ### An existing project
 
 To get started with webbot on Gitpod, add a [`.gitpod.yml`](./.gitpod.yml) file which contains the configuration to improve the developer experience on Gitpod. To learn more, please see the [Getting Started](https://www.gitpod.io/docs/getting-started) documentation.
+
+## Usage
+
+To execute the webbot run
+
+```python
+poetry run python3 init.py
+```
+
+### Debugging
+
+[Click here](http://127.0.0.1:4444/ui/index.html) to access the selenium grid dashboard. Use the password `secret` to log into the VNC server.

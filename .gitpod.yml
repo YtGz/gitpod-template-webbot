@@ -1,5 +1,7 @@
 ports:
   - port: 7900
+  - port: 4444
+    visibility: public
 tasks:
   - before: |
       # install poetry
@@ -10,6 +12,10 @@ tasks:
       poetry self update
       poetry install
   - init: |
-      docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-firefox:4.1.4-20220427
+      docker run --rm -d --name selenium-docker -p 4444:4444 --shm-size="2g" \
+      -v ${PWD}/selenium/config.toml:/opt/bin/config.toml \
+      -v ${PWD}/selenium/assets:/opt/selenium/assets \
+      -v /var/run/docker.sock:/var/run/docker.sock \
+      selenium/standalone-docker:4.1.4-20220427
   - command: |
       poetry run python3 init.py
